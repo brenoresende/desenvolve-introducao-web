@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pesquisa de Satisfação</title>
+</head>
+<body>
+
+  <h1>Pesquisa de Satisfação</h1>
+
+  <form action="pagina_destino.html" method="POST">
+
+    <p>
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" placeholder="Seu nome" required>
+    </p>
+
+    <p>
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+    </p>
+
+    <p>
+      <label for="telefone">Telefone:</label><br>
+      <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+    </p>
+
+    <p>1. Como você avalia nosso atendimento?</p>
+    <input type="radio" id="otimo" name="atendimento" value="Ótimo" required>
+    <label for="otimo">Ótimo</label><br>
+
+    <input type="radio" id="bom" name="atendimento" value="Bom">
+    <label for="bom">Bom</label><br>
+
+    <input type="radio" id="ruim" name="atendimento" value="Ruim">
+    <label for="ruim">Ruim</label>
+
+
+    <p>2. Você recomendaria nossa empresa?</p>
+    <input type="radio" id="sim" name="recomendaria" value="Sim" required>
+    <label for="sim">Sim</label><br>
+
+    <input type="radio" id="nao" name="recomendaria" value="Não">
+    <label for="nao">Não</label>
+
+    <p>
+      <label for="melhoria">3. Qual área você acha que podemos melhorar?</label><br>
+      <select id="melhoria" name="melhoria" required>
+        <option value="">Selecione</option>
+        <option value="Atendimento">Atendimento</option>
+        <option value="Produtos">Produtos</option>
+        <option value="Preços">Preços</option>
+        <option value="Prazo de entrega">Prazo de entrega</option>
+      </select>
+    </p>
+
+    <p>
+      <input type="checkbox" id="autorizacao" required>
+      <label for="autorizacao">Autorizo compartilhar minhas respostas com terceiros.</label>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar Resposta">
+    </p>
+
+  </form>
+
+</body>
+</html>
